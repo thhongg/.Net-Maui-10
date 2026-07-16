@@ -1,0 +1,21 @@
+<ContentPage
+    xmlns:local="clr-namespace:MyMauiApp.Fundamentals"
+    x:Class="MyMauiApp.Fundamentals.BehaviorDemoPage"
+    Title="Behavior Demo Page"
+    xmlns:behaviors="clr-namespace:MyMauiApp.Behaviors">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+
+        <Label
+            Text="Numeric Validation Behavior Demo"
+            FontSize="20" />
+
+        <Entry
+            Placeholder="Nhập số double"
+            behaviors:AttachedNumericValidationBehavior.AttachBehavior="True" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

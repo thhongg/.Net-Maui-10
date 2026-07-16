@@ -1,0 +1,14 @@
+<ContentPage
+    x:Class="MyMauiApp.XAML.HelloXamlPage"
+    Title="Hello XAML Page">
+
+    <Label
+        Text="Hello, XAML!"
+        VerticalOptions="Center"
+        HorizontalTextAlignment="Center"
+        Rotation="-15"
+        FontSize="18"
+        FontAttributes="Bold"
+        TextColor="Blue" />
+
+</ContentPage>

@@ -1,0 +1,14 @@
+<ContentPage 
+             xmlns:local="clr-namespace:MyMauiApp.XAML"
+             x:Class="MyMauiApp.XAML.ClockPage"
+             Title="Clock Page"
+             x:DataType="local:ClockViewModel">
+    <ContentPage.BindingContext>
+        <local:ClockViewModel />
+    </ContentPage.BindingContext>
+
+    <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
+           FontSize="18"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+</ContentPage>

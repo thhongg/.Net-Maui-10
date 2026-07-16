@@ -1,0 +1,23 @@
+<ContentPage 
+             xmlns:local="clr-namespace:MyMauiApp.XAML"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="MyMauiApp.XAML.StaticConstantsPage"
+             Title="Static Constants Page"
+             Padding="5,25,5,0">
+    <Grid RowDefinitions="Auto,*">
+       <Label Grid.Row="0"
+              Text="Hello, XAML!"
+              TextColor="{x:Static local:AppConstants.BackgroundColor}"
+              BackgroundColor="{x:Static local:AppConstants.ForegroundColor}"
+              FontAttributes="Bold"
+              FontSize="30"
+              HorizontalOptions="Center" />
+      <BoxView Grid.Row="1"
+               WidthRequest="{x:Static sys:Math.PI}"
+               HeightRequest="{x:Static sys:Math.E}"
+               Color="{x:Static local:AppConstants.ForegroundColor}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Scale="100" />
+    </Grid >
+</ContentPage>

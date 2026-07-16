@@ -1,0 +1,28 @@
+<ContentPage 
+             x:Class="MyMauiApp.XAML.SliderBindingsPage"
+             Title="Slider Bindings Page"
+             x:DataType="Slider">
+    <Grid>
+        <Label Grid.Row="0"
+               Text="ROTATION"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" 
+               Margin="0,20,0,0"/>
+        <Slider Grid.Row="1"
+                x:Name="slider"
+                Maximum="360"
+                VerticalOptions="Center" />
+        <Label Grid.Row="2"
+               BindingContext="{x:Reference slider}"
+               Text="{Binding Value, StringFormat='The angle is {0:F0} degrees'}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Margin="0,0,0,20"/>
+    </Grid>
+</ContentPage>

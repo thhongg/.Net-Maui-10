@@ -6,4 +6,8 @@ public partial class _FundamentalsMenuPage : ContentPage
     {
         InitializeComponent();
     }
+    private async void BehaviorDemoPage(object? sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new Fundamentals.BehaviorDemoPage());
+	}
 }

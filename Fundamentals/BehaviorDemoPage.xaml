@@ -13,9 +13,16 @@
             FontSize="20" />
 
         <Entry
-            Placeholder="Nhập số double"
+            Placeholder="Nhập số double [AttachBehavior]"
             behaviors:AttachedNumericValidationBehavior.AttachBehavior="True" />
 
+        <Entry Placeholder="Nhập số double [Behavior]">
+            <Entry.Behaviors>
+                <behaviors:NumericValidationStyleBehavior />
+            </Entry.Behaviors>
+        </Entry>
+
+        
     </VerticalStackLayout>
 
 </ContentPage>

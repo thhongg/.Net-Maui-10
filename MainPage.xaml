@@ -9,7 +9,7 @@
             <Label x:Name="label"
                 Text="Enable dark mode: " />
             <Switch SemanticProperties.Description="{Binding x:DataType='Label', Source={x:Reference label}, Path=Text}" />
-            
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -17,7 +17,7 @@
                 SemanticProperties.Description="dot net bot in a submarine number ten" />
 
             <Label
-                Text="MAUI Learning"
+                Text="Based on learn.microsoft.com"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" >
                 <Label.FontSize>
@@ -41,52 +41,12 @@
                 HorizontalOptions="Fill" />
 
             <Button
-                Text="Navigate Hello Xaml"
-                Clicked="HelloXaml" />
+                Text="XAML Lessons"
+                Clicked="OpenXamlMenu"/>
 
             <Button
-                Text="Xaml Plus CodePage"
-                Clicked="XamlPlusCodePage" />
-
-            <Button
-                Text="Grid Demo Page"
-                Clicked="GridDemoPage" />
-
-            <Button
-                Text="Shared Resources Page"
-                Clicked="SharedResourcesPage" />
-
-            <Button
-                Text="Static Constants Page"
-                Clicked="StaticConstantsPage" />
-                
-            <Button
-                Text="Slider Bindings Page"
-                Clicked="SliderBindingsPage"/>
-
-            <Button
-                Text="Slider Transforms Page"
-                Clicked="SliderTransformsPage"/>
-
-            <Button
-                Text="List View Demo Page"
-                Clicked="ListViewDemoPage"/>
-
-            <Button
-                Text="Clock Page"
-                Clicked="ClockPage"/>
-            
-            <Button
-                Text="Hsl Color Scroll Page"
-                Clicked="HslColorScrollPage"/>
-
-            <Button
-                Text="Keypad Page"
-                Clicked="KeypadPage"/>
-
-            <Button
-                Text="Behavior Demo Page"
-                Clicked="BehaviorDemoPage"/>
+                Text="Fundamentals Lessons"
+                Clicked="OpenFundamentalsMenu"/>
         </VerticalStackLayout>
     </ScrollView>
 
